@@ -1,0 +1,166 @@
+.navbar{
+    height: 70px;
+    z-index: 1;
+}
+
+
+.navbar-nav .nav-item .nav-link{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+#home{
+    background-image: linear-gradient(rgba(12, 129, 187, 0.5),rgba(12, 129, 187, 0.5)),url(images/hero_img.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.btn-contact{
+    background-color: rgb(242, 89, 114);
+    color: white;
+    border-radius: 0;
+    padding: 8px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-contact:hover{
+    background-color: rgb(215, 79, 102);
+}
+
+.home-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+.home-main p{
+    max-width: 40%;
+}
+
+.home-main h1{
+    font-size: 50px;
+    width: 80%;
+}
+
+
+section#service{
+    padding: 100px 0;
+}
+
+
+section#portfolio img{
+    width: 100%;
+    transition: 0.5s;
+    
+}
+
+.portfolio-block{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-text{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 19, 116, 0.8);
+    /* padding-top: 230px;
+    padding-left: 30px; */
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.text-inner{
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+}
+
+.portfolio-block:hover .portfolio-text{
+    opacity: 1;
+}
+
+
+.portfolio-block:hover img{
+    transform: scale(1.2);
+}
+
+
+
+.team-img img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.team-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.team-icons{
+    width: 100%;
+    height: 50px;
+    background-color:  rgb(242, 89, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -50px;
+    transition: 0.5s;
+}
+
+.team-icons a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.team-card{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+
+.team-text{
+    padding: 15px;
+}
+
+.team-line{
+    width: 60px;
+    height: 2px;
+    background-color: rgb(210, 210, 210);
+    margin: 10px auto;
+}
+
+
+.team-card:hover .team-icons{
+    bottom: 0;
+}
+
+.team-card:hover img{
+    transform: translateY(-50px);
+}
